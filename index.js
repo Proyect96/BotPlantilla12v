@@ -7,7 +7,7 @@ cl.on("ready", () => {
     console.log("BotListo")
 })
 
-cl.on("messageCreate", async(message) => {
+cl.on("message", async(message) => {
     if(message.content.startsWith(prefix+"ping")) {
         message.channel.send(`Pong!`)
     }
